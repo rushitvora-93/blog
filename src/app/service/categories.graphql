@@ -1,0 +1,5 @@
+query CategoryCbs($locale: I18NLocaleCode) {
+  categoryCbs(locale: $locale) {
+    ...CategoryCbEntityResponseCollectionFragment
+  }
+}

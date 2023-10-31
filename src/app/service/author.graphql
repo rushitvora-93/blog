@@ -1,0 +1,7 @@
+query Author($firstname: String, $lastname: String) {
+  usersPermissionsUsers(
+    filters: { firstname: { containsi: $firstname }, lastname: { containsi: $lastname } }
+  ) {
+    ...UsersPermissionsUserEntityResponseCollectionFragment
+  }
+}

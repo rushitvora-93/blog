@@ -1,0 +1,46 @@
+fragment CategoryCbEntityResponseCollectionFragment on CategoryCbEntityResponseCollection {
+  data {
+    attributes {
+      popular_post_cbs {
+        data {
+          ...PostCbEntityFragment
+        }
+      }
+      Name
+      Meta_Description
+      Slug
+      Image {
+        data {
+          attributes {
+            url
+            name
+            alternativeText
+            size
+            previewUrl
+          }
+        }
+      }
+    }
+  }
+}
+
+fragment CategoryCbEntityResponseFragment on CategoryCbEntityResponse {
+  data {
+    attributes {
+      Name
+      Meta_Description
+      Slug
+      Image {
+        data {
+          attributes {
+            url
+            name
+            alternativeText
+            size
+            previewUrl
+          }
+        }
+      }
+    }
+  }
+}
